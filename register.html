@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Registration</title>
+    <link rel ="stylesheet" href ="register.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Create Your Account</h1>
+
+        <form id ="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id ="fullName" required>
+                <div class="error" id="nameError"></div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id ="email" required>
+                <div class="error" id="emailError"></div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id ="password" required>
+                <div class="error" id="passwordError"></div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id ="confirmPassword" required>
+                <div class="error" id="confirmError"></div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id ="phone" required>
+                <div class="error" id="phoneError"></div>
+                
+            </div>
+
+            <div class ="form-group">
+                <label>Gender:</label>
+                <input type ="radio" id ="male" name ="gender" value ="male" required>
+                <label for="male" style="display: inline;">Male</label>
+                <input type ="radio" id ="female" name ="gender" value ="female" >
+                <label for="female" style="display: inline;">Female</label>
+                <input type ="radio" id ="other" name ="gender" value ="other">
+                <label for="other" style="display: inline;">other</label>
+                <div class="error" id="genderError"></div>
+            </div>
+
+            <div class="form-group">
+                <lable for="dob">Date of Birth:</lable>
+                <input type ="date" id="dob" required>
+                <div class="error" id="dobError"></div>
+                
+            </div>
+            
+
+            <div class="form-group">
+                <lable for="address">Address:</lable>
+                <textarea id="address" required></textarea>
+                <div class="error" id="addressError"></div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for ="city">City:</label>
+                <select id ="city" required>
+                    <option value="">Select City</option>
+                    <option value="Ahmedabadh">Ahmedabadh</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Hydrabadh">Hydrabadh</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Bangaluru">Bangaluru</option>
+                </select>
+                <div class="error" id ="cityError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Skills Known:</label>
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html" style="display: inline;">HTML</label>
+                
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css" style="display: inline;">CSS</label>
+
+                <input type="checkbox" id="js" name="skills" value="js">
+                <label for="js" style="display: inline;">Java Script</label>
+
+                <input type="checkbox" id="react" name="skills" value="react">
+                <label for="react" style="display: inline;">React</label>
+
+                 <input type="checkbox" id="java" name="skills" value="java">
+                <label for="java" style="display: inline;">Java</label>
+
+                <div class="error" id ="skillError"></div>
+            </div>
+
+            <div class="form-group">
+                <input type ="checkbox" id="terms" required>
+                <label for="terms" style="display: inline;">I accept the terms and conditions</label>
+                <div class="error" id =" termError"></div>
+                    
+                
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="register.js">
+        
+    </script>
+  </body>
+</html>
